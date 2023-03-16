@@ -63,10 +63,10 @@ export const Layout = () => {
     </video>
     <footer>
       <p> Made for fun by{" "}
-        <a href="https//:www.ramusas.com" target="_blank">RamusAs</a>,{" "}
-        <a href="https://chat.openai.com" target="_blank">ChatGPT</a>,{" "}
-        <a href="https://www.midjourney.com/home/" target="_blank">Midjourney</a> and{" "}
-        <a href="https://www.d-id.com/" target="_blank">DID</a>{" "}
+        <a href="https//:www.ramusas.com" target="_blank" rel="noreferrer">RamusAs</a>,{" "}
+        <a href="https://chat.openai.com" target="_blank" rel="noreferrer">ChatGPT</a>,{" "}
+        <a href="https://www.midjourney.com/home/" target="_blank" rel="noreferrer">Midjourney</a> and{" "}
+        <a href="https://www.d-id.com/" target="_blank" rel="noreferrer">DID</a>{" "}
         ©2023
       </p>
     </footer>

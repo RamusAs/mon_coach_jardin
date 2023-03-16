@@ -8,7 +8,7 @@ export const Meteo = () => {
       {current &&
         <div className="cardm">
         <div className="card">
-            <img src={ current.icon } />
+            <img src={ current.icon } alt="Current weather" />
           <div className="main">
             {current?.temperature?.value} °C
             <p className="mainsub">Nantes, France</p>
