@@ -1,0 +1,365 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000a18;
+  color: white;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+nav a {
+  padding: 1rem;
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #1abc9c;
+}
+
+section {
+  margin-bottom: 100px;
+  transition: all 0.3s ease;
+}
+section h1 {
+  font-size: 3rem;
+}
+section.hero {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../public/assets/hero.png");
+}
+
+[class^=section] {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+[class^=section] h2 {
+  width: 95%;
+  border-bottom: solid 2px #1abc9c;
+  padding: 20px;
+}
+[class^=section] div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.cardm {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 15%;
+  right: 150px;
+  z-index: 2;
+}
+.cardm .card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: whitesmoke;
+  color: black;
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+}
+.cardm .card img {
+  width: 100px;
+  height: 100px;
+}
+.cardm .card:hover {
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+.cardm .card:hover + .card2 {
+  height: 140px;
+}
+.cardm .card:hover + .card2 .lower {
+  top: 20em;
+}
+.cardm .weather {
+  position: relative;
+  margin: 1em;
+}
+.cardm .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+}
+.cardm .main .mainsub {
+  font-size: 0.4em;
+  margin: 0;
+}
+
+.card2 {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  height: 60px;
+  border-radius: 35px;
+  background: white;
+  transition: 0.4s ease-in-out;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: black;
+  left: 1.8em;
+  top: 0.5em;
+  gap: 4em;
+}
+
+.humiditytext {
+  position: relative;
+  left: 3.6em;
+  top: 2.7em;
+  font-size: 0.6em;
+}
+
+.airtext {
+  position: relative;
+  left: 3.8em;
+  top: 2.7em;
+  font-size: 0.6em;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  text-align: center;
+  color: black;
+  left: 3em;
+  top: 1em;
+  margin-top: 0.7em;
+  font-size: 0.7em;
+  transition: 0.4s ease-in-out;
+}
+
+.aqi {
+  margin-right: 3.25em;
+}
+
+.realfeel {
+  margin-right: 1.8em;
+}
+
+video {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 10%;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+}
+video:hover {
+  width: 30%;
+}
+
+.Vegetalcard {
+  position: relative;
+  border-radius: 0.75rem;
+  background-color: #112240;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.Vegetalcard .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  background-clip: border-box;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.75rem;
+  background-color: #1abc9c;
+  box-shadow: 0 10px 15px -3px rgba(0, 25, 45, 0.4), 0 4px 6px -4px rgba(0, 25, 45, 0.4);
+  height: 50px;
+  width: 100%;
+}
+.Vegetalcard img {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  cursor: pointer;
+}
+.Vegetalcard .overlay {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  bottom: -44px;
+  left: 0;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  width: 400px;
+  height: 0px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.Vegetalcard .overlay p {
+  padding: 0 10px;
+  text-justify: justify;
+}
+.Vegetalcard .tag {
+  font-weight: 300;
+  font-size: 0.75rem;
+  display: block;
+}
+.Vegetalcard .action {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px -1px rgba(33, 150, 243, 0.4), 0 2px 4px -2px rgba(33, 150, 243, 0.4);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1abc9c;
+  border-radius: 0.5rem;
+}
+.Vegetalcard:hover .overlay {
+  visibility: visible;
+  height: 400px;
+}
+
+.row {
+  margin: -20px 0;
+}
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+.row .col.x-50 {
+  width: 50%;
+}
+.row .col.x-100 {
+  width: 100%;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.get-in-touch .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+  color: white;
+}
+.contact-form input {
+  color: white;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: white;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: transparent;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: white;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #1abc9c;
+  border: 1em;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: -355px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  color: #1abc9c;
+}/*# sourceMappingURL=main.css.map */

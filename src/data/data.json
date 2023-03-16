@@ -1,0 +1,80 @@
+{
+  "herbes": [
+    {
+      "nom": "Persil",
+      "image": "persil.png",
+      "instructions": [
+        "Semer les graines dans un sol riche et bien drainé, à 1 cm de profondeur.",
+        "Maintenir le sol humide jusqu'à la germination.",
+        "Une fois que les plantules atteignent 2-3 cm de hauteur, éclaircir à 20 cm de distance.",
+        "Arroser régulièrement et fertiliser tous les deux à trois semaines."
+      ]
+    },
+    {
+      "nom": "Thym",
+      "image": "thym.png",
+      "instructions": [
+        "Planter les boutures ou les jeunes plants dans un sol bien drainé.",
+        "Arroser régulièrement mais laisser sécher légèrement le sol entre les arrosages.",
+        "Fertiliser légèrement tous les deux mois.",
+        "Tailler régulièrement pour éviter que la plante devienne trop ligneuse."
+      ]
+    },
+    {
+      "nom": "Basilic",
+      "image": "basilic.png",
+      "instructions": [
+        "Semer les graines à la surface d'un terreau fin et arroser délicatement.",
+        "Maintenir le terreau humide jusqu'à la germination.",
+        "Une fois que les plantules atteignent 5-6 cm de hauteur, les repiquer dans un sol riche et bien drainé.",
+        "Arroser régulièrement et fertiliser tous les deux à trois semaines."
+      ]
+    }
+  ],
+  "tomates": [
+    {
+      "nom": "Tomate Cerise",
+      "image": "tomate.png",
+      "instructions": [
+        "Plantation: Dans un sol riche en nutriments, avec environ 45 cm entre chaque plant.Taillés régulièrement pour encourager la croissance de nouveaux fruits.",
+        "Arrosage: Les tomates cerises ont besoin d'un arrosage régulier et modéré, environ une fois par semaine. Éviter de mouiller les feuilles pour prévenir les maladies fongiques.",
+        "Engrais: Fertiliser les tomates cerises toutes les deux semaines avec un engrais riche en potassium pour favoriser la production de fruits.",
+        "Récolte: Prêtes à être récoltées environ 60 à 80 jours après la plantation, lorsqu'elles sont rouges et fermes au toucher."
+      ]
+    },
+    {
+      "nom": "Tomate Coeur de Boeuf",
+      "image": "coeur.png",
+      "instructions": [
+        "Plantation: Dans un sol riche en nutriments, avec environ 60 cm entre chaque plant. Taillés régulièrement pour encourager la croissance de nouveaux fruits.",
+        "Arrosage: Les tomates Coeur de Boeuf ont besoin d'un arrosage régulier et modéré, environ une fois par semaine. Éviter de mouiller les feuilles pour prévenir les maladies fongiques.",
+        "Engrais: Fertiliser les tomates Coeur de Boeuf toutes les deux semaines avec un engrais riche en potassium pour favoriser la production de fruits.",
+        "Récolte: Prêtes à être récoltées environ 80 à 100 jours après la plantation, lorsqu'elles sont rouges et fermes au toucher."
+      ]
+    }
+  ],
+  "patates": [
+    {
+      "nom": "Pomme de terre Charlotte",
+      "image": "patate.png",
+      "instructions": [
+        "Description: variété à chair ferme et à la peau fine. Elle est idéale pour les salades, les ragoûts et les gratins.",
+        "Plantation: Dans un sol riche en nutriments, avec environ 30 cm entre les plants et 60 cm entre les rangs et à 10 à 15 cm de profondeur.",
+        "Arrosage: Régulier et modéré, environ deux fois par semaine. Éviter de mouiller les feuilles pour prévenir les maladies fongiques.",
+        "Buttage: environ 3 semaines après la plantation pour favoriser la croissance des tubercules",
+        "Maladies: Attention aux attaques de mildiou"
+      ]
+    },
+    {
+      "nom": "Pomme de terre Ratte",
+      "image": "patate.png",
+      "instructions": [
+        "Description: variété à chair fondante et à la peau fine. Elle est idéale pour les purées, les potages et les gratins.",
+        "Plantation: Dans un sol riche en nutriments, avec environ 30 cm entre les plants et 60 cm entre les rangs et à 10 à 15 cm de profondeur.",
+        "Arrosage: Régulier et modéré, environ deux fois par semaine. Éviter de mouiller les feuilles pour prévenir les maladies fongiques.",
+        "Buttage: environ 3 semaines après la plantation pour favoriser la croissance des tubercules",
+        "Maladies: Attention aux attaques de mildiou"
+      ]
+    }
+  ]
+}
